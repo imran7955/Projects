@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Academic Companion</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Academic Companion</string>
+    <string name="nav_header_subtitle"># 214035, 214057, 214059, 214060</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_view_notice"> View Notices </string>
+    <string name="menu_announce">Announce (for CR/Teacher)</string>
+    <string name="menu_edit_profile">Edit Profile</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_progress">Progress</string>
+    <string name="menu_gpa_cgpa">CGPA Calculator</string>
+    <string name="menu_pending_account">Pending Account</string>
+
+    <string-array name="announcenoticetype">
+        <item> CT </item>
+        <item> Assignment </item>
+        <item> Lab-report </item>
+        <item> Quiz </item>
+        <item> Final Exam </item>
+        <item> Other </item>
+
+    </string-array>
+
+    <string-array name="spnsubject">
+        <item> Networking </item>
+        <item> Artificial Intelligence </item>
+        <item> Programming </item>
+        <item> Data Structure </item>
+        <item> Mathematics </item>
+        <item> Physics </item>
+
+    </string-array>
+
+
+
+    <string-array name="user_types">
+
+        <item>Student</item>
+        <item>Faculty</item>
+        <item> CR </item>
+    </string-array>
+
+    <string-array name="departments">
+        <item>CSE</item>
+        <item>EEE</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="semesters">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="semesters_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+
+
+
+
+
+</resources>

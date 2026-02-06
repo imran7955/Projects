@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_view_notice">
+
+
+    <fragment
+        android:id="@+id/nav_view_notice"
+        android:name="com.example.academiccompanion.ui.view_notice.ViewNoticeFragment"
+        android:label="@string/menu_view_notice"
+        tools:layout="@layout/fragment_announce" />
+
+    <fragment
+        android:id="@+id/nav_announce"
+        android:name="com.example.academiccompanion.ui.Announce.AnnounceFragment"
+        android:label="@string/menu_announce"
+        tools:layout="@layout/fragment_announce" />
+    <fragment
+        android:id="@+id/nav_progress"
+        android:name="com.example.academiccompanion.ui.progress.ProgressFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress" />
+    <fragment
+        android:id="@+id/nav_gpa_cgpa"
+        android:name="com.example.academiccompanion.ui.gpa_cgpa.GpaCgpa"
+        android:label="CGPA Calculator"
+        tools:layout="@layout/fragment_gpa_cgpa" />
+
+    <fragment
+        android:id="@+id/nav_edit_profile"
+        android:name="com.example.academiccompanion.ui.editprofile.EditProfileFragment"
+        android:label="@string/menu_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.academiccompanion.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/editNotice"
+        android:name="com.example.academiccompanion.ui.editprofile.EditProfileFragment"
+
+        tools:layout="@layout/fragment_edit_notice" />
+
+
+</navigation>

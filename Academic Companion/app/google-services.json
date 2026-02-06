@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "704285631061",
+    "project_id": "edutrack-5b64e",
+    "storage_bucket": "edutrack-5b64e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704285631061:android:627411baa143920f17aadc",
+        "android_client_info": {
+          "package_name": "com.example.academiccompanion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUXxJGHhNS_Rnb72d_bObuVDwUpEqb_wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704285631061:android:1258d969c49071e217aadc",
+        "android_client_info": {
+          "package_name": "com.example.edutrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUXxJGHhNS_Rnb72d_bObuVDwUpEqb_wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704285631061:android:4f4f0a3c0c80a09717aadc",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUXxJGHhNS_Rnb72d_bObuVDwUpEqb_wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

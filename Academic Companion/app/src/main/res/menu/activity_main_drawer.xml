@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_view_notice"
+            android:icon="@drawable/notification"
+            android:title="@string/menu_view_notice" />
+
+
+        <item
+            android:id="@+id/nav_announce"
+            android:icon="@drawable/communication"
+            android:title="@string/menu_announce" />
+        <item
+            android:id="@+id/nav_progress"
+            android:icon="@drawable/progress"
+            android:title="@string/menu_progress" />
+        <item
+            android:id="@+id/nav_gpa_cgpa"
+            android:icon="@drawable/calculator"
+            android:title="@string/menu_gpa_cgpa" />
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/outline_account_circle_24"
+            android:title="@string/menu_edit_profile" />
+<!--        <item-->
+<!--            android:id="@+id/nav_pending_account"-->
+<!--            android:icon="@drawable/outline_account_circle_24"-->
+<!--            android:title="@string/menu_pending_account" />-->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

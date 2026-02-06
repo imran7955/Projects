@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Notice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Department -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Department:"
+                android:textSize="16sp"
+                android:gravity="center_vertical" />
+
+            <Spinner
+                android:id="@+id/spnDepartment"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <!-- Year -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Year:"
+                android:textSize="16sp"
+                android:gravity="center_vertical" />
+
+            <Spinner
+                android:id="@+id/spnYear"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <!-- Semester -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Semester:"
+                android:textSize="16sp"
+                android:gravity="center_vertical" />
+
+            <Spinner
+                android:id="@+id/spnSemester"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <!-- Subject -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Subject:"
+                android:textSize="16sp"
+                android:gravity="center_vertical" />
+
+            <Spinner
+                android:id="@+id/spnnoticetype"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <!-- Notice Type -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Notice Type:"
+                android:textSize="16sp"
+                android:gravity="center_vertical" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+
+
+        <!-- Deadline -->
+        <EditText
+            android:id="@+id/deadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deadline (e.g., 27-01-2001 10:00 AM)"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Notice Text -->
+        <EditText
+            android:id="@+id/noticetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit notice details here..."
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:gravity="top"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Done Edit Button -->
+        <Button
+            android:id="@+id/btnAnnounce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done Edit"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+</ScrollView>

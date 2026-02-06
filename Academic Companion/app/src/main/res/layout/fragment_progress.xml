@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A2A"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Academic Progress"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/subjectSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:padding="10dp" />
+
+        <!-- CT Marks Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/ct_label1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="CT Mark"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/ct1"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/ct_label1"
+                android:layout_marginStart="16dp"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/ct2"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/ct1"
+                android:layout_marginStart="8dp"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/ct3"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/ct2"
+                android:layout_marginStart="8dp"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/ct4"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/ct3"
+                android:layout_marginStart="8dp"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/ct_label"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Sum of Best 3"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/sumBest3"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@id/ct_label"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@android:drawable/edit_text"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#4B9EF2"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp">
+
+            <!-- Total Class -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="No. of Total Class"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"/>
+
+                    <TextView
+                        android:text=":"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/totalClass"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="#FFFFFF"
+                    android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Present -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="Present"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"/>
+
+                    <TextView
+                        android:text=":"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/presentClass"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="#FFFFFF"
+                    android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Percentage -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:paddingLeft="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="Percentage"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:text=":"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/percentage"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF"
+                    android:paddingStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Obtained Mark -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="Obtained Mark"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"/>
+
+                    <TextView
+                        android:text=":"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/obtainedMark"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="#FFFFFF"
+                    android:paddingStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDoneEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done Edit"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D64545"
+            android:layout_marginBottom="16dp"/>
+
+        <TableLayout
+            android:id="@+id/gradeTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="#FFB6B6"
+            android:textAlignment="center">
+
+            <TableRow>
+                <TextView android:text="Expected Grade" android:textStyle="bold"/>
+                <TextView android:text="Expected GPA" android:textStyle="bold"/>
+                <TextView android:text="Required Mark\nOut of 210" android:textStyle="bold"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="A+" android:textAlignment="center" />
+                <TextView android:text="4.00" android:textAlignment="center" />
+                <TextView android:id="@+id/markAPlus" android:textAlignment="center"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="A" android:textAlignment="center" />
+                <TextView android:text="3.75" android:textAlignment="center" />
+                <TextView android:id="@+id/markA" android:textAlignment="center" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="A-" android:textAlignment="center" />
+                <TextView android:text="3.50" android:textAlignment="center" />
+                <TextView android:id="@+id/markAMinus" android:textAlignment="center" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="B+" android:textAlignment="center" />
+                <TextView android:text="3.25" android:textAlignment="center" />
+                <TextView android:id="@+id/markBPlus" android:textAlignment="center" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="B" android:textAlignment="center"/>
+                <TextView android:text="3.00" android:textAlignment="center" />
+                <TextView android:id="@+id/markB" android:textAlignment="center" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="B-" android:textAlignment="center"/>
+                <TextView android:text="2.75" android:textAlignment="center" />
+                <TextView android:id="@+id/markBMinus" android:textAlignment="center" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="C+" android:textAlignment="center"/>
+                <TextView android:text="2.50" android:textAlignment="center" />
+                <TextView android:id="@+id/markCPlus" android:textAlignment="center" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="C" android:textAlignment="center"/>
+                <TextView android:text="2.25" android:textAlignment="center" />
+                <TextView android:id="@+id/markC" android:textAlignment="center" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="D" android:textAlignment="center"/>
+                <TextView android:text="2.00" android:textAlignment="center" />
+                <TextView android:id="@+id/markD" android:textAlignment="center" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="F" android:textAlignment="center"/>
+                <TextView android:text="0.00" android:textAlignment="center" />
+                <TextView android:id="@+id/markF" android:textAlignment="center" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
